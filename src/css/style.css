@@ -13,6 +13,10 @@
     display: flex;
     gap: 16px;
   }
+
+  .cat-info img {
+    object-fit: contain;
+  }
   
   .card-text {
     max-width: 720px;

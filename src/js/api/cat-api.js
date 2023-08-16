@@ -1,5 +1,5 @@
 import axios from 'axios';
-import { MarkUpInterface } from '../service-markup/service-markup';
+import { MarkupI } from '../markup/markup';
 import { API_KEY, URL_SELECT, URL_BREED_ID } from '../consts'
 
 const catApi = axios.create();
@@ -9,7 +9,7 @@ function fetchBreeds() {
   return catApi
     .get(URL_SELECT)
     .then(response => response.data)
-    .catch(() => MarkUpInterface.showError('select'));
+    .catch(() => MarkupI.showError('select'));
 }
 
 function fetchCatByBreed(evt) {
@@ -21,7 +21,7 @@ function fetchCatByBreed(evt) {
       },
     })
     .then(response => response.data)
-    .catch(() => MarkUpInterface.showError('card'));
+    .catch(() => MarkupI.showError('card'));
 }
 
 export { fetchBreeds, fetchCatByBreed };

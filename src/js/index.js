@@ -1,5 +1,5 @@
 import { fetchBreeds, fetchCatByBreed } from './api/cat-api';
-import { MarkUpInterface } from './service-markup/service-markup';
+import { MarkupI } from './markup/markup';
 
 const ref = {
   input: '.breed-select',
@@ -7,7 +7,7 @@ const ref = {
   loader: '.loader',
 };
 
-const catInterface = new MarkUpInterface(ref);
+const catInterface = new MarkupI(ref);
 
 document.addEventListener('DOMContentLoaded', addDataToSelect);
 catInterface.input.addEventListener('change', onShowCardCat);

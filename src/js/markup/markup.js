@@ -2,7 +2,7 @@ import SlimSelect from 'slim-select';
 import 'slim-select/dist/slimselect.css';
 import { Notify } from 'notiflix/build/notiflix-notify-aio';
 
-class MarkUpInterface {
+class MarkupI {
   constructor({ input, card, loader }) {
     this.input = document.querySelector(input);
     this.card = document.querySelector(card);
@@ -81,4 +81,4 @@ class MarkUpInterface {
   }
 }
 
-export { MarkUpInterface };
+export { MarkupI };
