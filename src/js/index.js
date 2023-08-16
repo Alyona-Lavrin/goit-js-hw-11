@@ -38,5 +38,5 @@ function onShowCardCat(evt) {
       catInterface.hiddenCard();
       catInterface.showError('card');
     })
-    .finally(() => catInterface.switchShowLoader());
+    .finally(() => catInterface.toggleLoader());
 }
