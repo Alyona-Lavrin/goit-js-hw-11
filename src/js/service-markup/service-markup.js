@@ -56,7 +56,7 @@ class MarkUpInterface {
     this.card.classList.add('is-hidden');
   }
 
-  switchShowLoader() {
+  toggleLoader() {
     this.loader.classList.toggle('is-hidden');
   }
 

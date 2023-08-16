@@ -22,12 +22,12 @@ function addDataToSelect() {
       catInterface.showError('select');
       catInterface.hiddenSelect();
     })
-    .finally(() => catInterface.switchShowLoader());
+    .finally(() => catInterface.toggleLoader());
 }
 
 function onShowCardCat(evt) {
   catInterface.hiddenCard();
-  catInterface.switchShowLoader();
+  catInterface.toggleLoader();
 
   fetchCatByBreed(evt)
     .then(data => {
