@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_KEY = '38642451-6ca93df2512694306dc1a1cd7';
+const API_KEY = '38967386-5d6c7a2c5bfd9f2a9016c5b13';
 const BASE_URL = 'https://pixabay.com/api/';
 
 export default class NewsApiService {
