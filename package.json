@@ -19,6 +19,7 @@
   },
   "dependencies": {
     "axios": "^0.26.0",
+    "cssnano": "^6.0.1",
     "notiflix": "^3.2.4",
     "simplelightbox": "^2.10.2"
   },
