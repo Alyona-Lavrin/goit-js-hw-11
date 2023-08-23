@@ -6,8 +6,8 @@
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    background-color: #e8dbdb;
-    color: #3d2d2d;
+    background-color: #c8c8c8;
+    color: #ffffff;
     border: none;
     text-align: center;
     outline: none;
@@ -26,5 +26,4 @@
   }
   .scroll-to-top-btn:hover {
     transform: scale(1.1);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   }
