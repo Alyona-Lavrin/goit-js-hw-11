@@ -25,6 +25,12 @@ async function handlerSubmitForm(ev) {
   newsApiService.resetPageToDefault();
 
   try {
+    if (newsApiService.query.length === 0) { 
+      throw new Error(
+        'Введіть будь ласка хоч одну козявочну буквочку'
+      );
+    };
+    
     const data = await newsApiService.fetchSearch();
     if (parseInt(data.totalHits) <= 0) {
       throw new Error(
